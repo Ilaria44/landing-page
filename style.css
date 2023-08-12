@@ -1,9 +1,13 @@
 html, body {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   width: 100%;
   font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -19,8 +23,6 @@ html, body {
 
 .navbar ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   text-align: center;
 }
@@ -44,13 +46,11 @@ html, body {
   font-size: 48px;
   font-weight: 900;
   line-height: 1;
-  margin: 0;
 }
 
 .hero p, .hero .side-image {
   color: #e5e7eb;
   font-size: 18px;
-  margin: 0;
 }
 
 .hero button {
@@ -89,4 +89,47 @@ html, body {
   flex-grow: 1;
   padding: 10px;
   text-align: center;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #1f2937;
+  padding: 40px 20vw 100px 20vw;
+}
+
+.information h2 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.information p {
+  font-size: 12px;
+}
+
+.information .empty-box {
+  height: 115px;
+  border: 3px solid #3882f6;
+  border-radius: 10px;
+}
+
+.information .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.information [class^="item"] {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 115px;
+  text-align: center;
+  gap: 6px;
+}
+
+.quote {
+  background-color: #e5e7eb;
 }
