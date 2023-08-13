@@ -168,10 +168,12 @@ h1, h2, p, ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 
 .call-to-action h2 {
   font-size: 22px;
+  margin-bottom: 2px;
 }
 
 .call-to-action button {
@@ -182,5 +184,10 @@ h1, h2, p, ul {
   font-weight: bold;
   background-color: #3882f6;
   border-radius: 6px;
-  margin-left: 20px;
+  margin-left: 10px;
+  flex-shrink: 0;
+}
+
+.call-to-action .container {
+  flex-shrink: 10;
 }
