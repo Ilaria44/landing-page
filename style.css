@@ -67,7 +67,7 @@ h1, h2, p, ul {
 }
 
 .hero {
-  height: 450px;
+  padding: 100px 0;
   display: flex;
   align-items: center;
   gap: 50px;
@@ -123,7 +123,8 @@ h1, h2, p, ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  gap: 10px;
+  gap: 30px 10px;
+  flex-wrap: wrap;
 }
 
 .information [class^="item"] {
@@ -191,9 +192,6 @@ h1, h2, p, ul {
   flex-shrink: 0;
 }
 
-.call-to-action .container {
-  flex-shrink: 10;
-}
 
 .footer {
   height: 80px;
@@ -205,3 +203,40 @@ h1, h2, p, ul {
   gap: 10px;
 }
 
+@media (max-width: 700px) {
+  .navbar a {
+    font-size: 14px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .hero .container {
+    align-items: center;
+  }
+
+  .quote {
+    font-size: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .call-to-action .outer-box {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 40px;
+  }
+
+  .call-to-action button {
+    align-self: flex-end;
+  }
+  
+}
