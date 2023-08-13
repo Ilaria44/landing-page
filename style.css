@@ -150,3 +150,38 @@ h1, h2, p, ul {
   align-self: flex-end;
   margin-top: 10px;
 }
+
+.call-to-action {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 12vw;
+}
+
+.call-to-action .outer-box {
+  background-color: #3882f6;
+  width: 100%;
+  color: #f9faf8;
+  padding: 40px 100px;
+  font-size: 18px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.call-to-action h2 {
+  font-size: 22px;
+}
+
+.call-to-action button {
+  border: solid 2px #f9faf8;
+  padding: 6px 28px;
+  font-size: 18px;
+  color: #f9faf8;
+  font-weight: bold;
+  background-color: #3882f6;
+  border-radius: 6px;
+  margin-left: 20px;
+}
